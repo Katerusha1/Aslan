@@ -146,12 +146,7 @@ textarea {
     align-items: center;
 }
 
-.header-bottom {
-    position: absolute;
-    right: 130px;
-    left: 130px;
-    top: 220px;
-}
+
 
 
 .header-top__columns {
@@ -161,16 +156,18 @@ textarea {
  
  }
 
- .header-info {
+ .info {
      display: flex;
-     flex-wrap: wrap;
      justify-content: space-around;
-     display: flex;
      align-items: center;
      padding-top: 84px;
 }
 
- .Internet{
+.info li::nth-child(3) {
+    display: flex;
+}
+
+ .site-name{
     
     font-size: 16px;
     line-height: 23px;
@@ -183,10 +180,10 @@ textarea {
     font-size: 14px;
     line-height: 24px;
     color: #32425C;
-    ;
+    
 }
 
- .tube {
+ .phone {
     font-weight: bold;
     font-size: 21px;
     color: #EE3643;
@@ -196,7 +193,7 @@ textarea {
     border: 2px solid #FFFFFF;
 }
 
-.tube::after {
+.phone::after {
     
     content: "";
     position: absolute;
@@ -208,49 +205,35 @@ textarea {
     height: 19px;
 }
 
-.open {
-    font-weight: normal;
-    font-size: 21px;
-    line-height: 21px;
+.login, 
+.reg {
+    background:#FFFFFF;
     color: #000000;
-    padding-left: 30px;
     position: relative;
+    height: 45px;
+    display: block;
+    text-align: center;
+    line-height: 45px;
+    
 }
 
-.open::after {
+.login {
+    width: 121px;
+}
+.login::after {
     content: "";
     position: absolute;
-    left: 0;
+    left: 15px;
     top: 50%;
     transform: translateY(-50%);
     background: url(../img/open.png) no-repeat center;
     width: 19px;
     height: 19px;
-
+}
+.reg{
+    width: 150px;
 }
 
-.registr {
-    font-weight: normal;
-    font-size: 21px;
-    line-height: 21px;
-    color: #000000;
-    padding-left: 30px;
+.header-bottom {
+    background: #F3F7F8;
 }
-
- 
-
-
- .header-bottom {
-    background: #32425C;
-    width: 940px;
-    height: 60px;
-    
-}
-
-.header-bottom__column {
-    display: flex; 
-    justify-content: space-around;
-    align-items: center;
-    color: #FFFFFF;
-    padding:  20px;
- }
